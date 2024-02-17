@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Histórico Escolar</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Histórico Escolar</h1>
+      <form id="disciplineForm">
+        <input type="text" name="anoPeriodo" placeholder="Ano/Período" />
+        <input
+          type="text"
+          name="codigoDisciplina"
+          placeholder="Código da Disciplina"
+        />
+        <input type="text" name="cargaHoraria" placeholder="Carga Horária" />
+        <input type="text" name="frequencia" placeholder="Frequência" />
+        <input type="text" name="nota" placeholder="Nota" />
+        <input type="submit" value="Enviar" />
+      </form>
+
+      <table id="disciplineTable">
+        <thead>
+          <tr>
+            <th>Ano/Período</th>
+            <th>Código da Disciplina</th>
+            <th>Carga Horária (h)</th>
+            <th>Frequência (%)</th>
+            <th>Nota</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <div class="statistics" id="statistics">
+        <h2>Estatísticas</h2>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
